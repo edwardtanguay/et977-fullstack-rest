@@ -9,8 +9,81 @@
 ### TRY TO GET JOB THAT DOES NOT EXIST
 {{url}}/jobs/5555
 
+### CREATE NEW JOB
+POST {{url}}/jobs
+content-type: application/json
+ 
+{
+    "title": "Frontend Developer TEST",
+    "company": "Company Name TEST",
+    "url": "http://TEST",
+    "description": "test",
+    "skillList": "skills TEST",
+    "publicationDate": "2022-11-17"
+}
+
+### REPLACE A JOB
+PUT {{url}}/jobs/1
+content-type: application/json
+
+{
+    "id": 1,
+    "title": "111 TEST",
+    "company": "Company Name TEST",
+    "url": "http://TEST",
+    "description": "test",
+    "skillList": "skills TEST",
+    "publicationDate": "2022-11-17"
+}
+
+### CHANGE A PROPERTY ON A JOB
+PATCH {{url}}/jobs/2
+content-type: application/json
+ 
+{
+    "publicationDate": "2023-10-25"
+}
+
+### DELETE A JOB
+DELETE {{url}}/jobs/1
+content-type: application/json
+ 
 ### GET ALL SKILLS
 {{url}}/skills
-
+ 
 ### GET SINGLE SKILL
-{{url}}/skills/100
+{{url}}/skills/2
+ 
+### CREATE NEW SKILL
+POST {{url}}/skills
+content-type: application/json
+ 
+{
+    "idCode": "testskill",
+    "name": "TEST SKILL",
+    "url": "https://testskill",
+    "description": "description test"
+}
+ 
+### REPLACE A SKILL
+PUT {{url}}/skills/1
+content-type: application/json
+ 
+{
+    "idCode": "TEST REPLACE SKILL",
+    "name": "TEST REPLACE SKILL",
+    "url": "https://testskill",
+    "description": "description test"
+}
+ 
+### CHANGE A PROPERTY ON A SKILL
+PATCH {{url}}/skills/2
+content-type: application/json
+ 
+{
+    "name": "22222222222222222222222"
+}
+ 
+### DELETE A SKILL
+DELETE {{url}}/skills/3
+content-type: application/json
