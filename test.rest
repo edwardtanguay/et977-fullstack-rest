@@ -1,0 +1,16 @@
+@url = http://localhost:6995
+
+### GET ALL JOBS
+{{url}}/jobs
+
+### GET SINGLE JOB
+{{url}}/jobs/55
+
+### TRY TO GET JOB THAT DOES NOT EXIST
+{{url}}/jobs/5555
+
+### GET ALL SKILLS
+{{url}}/skills
+
+### GET SINGLE SKILL
+{{url}}/skills/100
