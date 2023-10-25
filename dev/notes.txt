@@ -1,0 +1,4 @@
+- create GetJob component
+	- use fetch/GET to get a specific job
+	- create form to get ID
+	- use ID to get job

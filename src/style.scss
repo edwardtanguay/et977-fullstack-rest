@@ -1,10 +1,44 @@
-    body {
-        font-family: sans-serif;
-        padding: 0 1rem;
-        background-color: rgb(25, 45, 75);
-        color: #eee;
-     
-        h1 {
-            color: orange;
-        }
-    }
+	body {
+		font-family: sans-serif;
+		padding: 0 1rem;
+		background-color: rgb(25, 45, 75);
+		color: #eee;
+	 
+		h1 {
+			color: orange;
+		}
+
+			.component {
+		background-color: rgb(35, 58, 35);
+		padding: 1rem;
+		border-radius: .5rem;
+		margin-top: 1rem;
+		border: 1px solid rgb(189, 189, 56);
+		width: 30rem;
+
+		legend {
+			color: yellow;
+			span {
+				color:rgb(238, 178, 15);
+			}
+		}
+
+		form {
+			div {
+				margin-top: .5rem;
+			}
+
+			input {
+				margin-right: .3rem;
+			}
+		}
+
+		.display {
+			margin-top: 1rem;
+
+			.error {
+				color: tomato;
+			}
+		}
+	}
+	}
